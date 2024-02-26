@@ -8,7 +8,7 @@ Para desenvolver esse projeto eu usei de inspiração o Twitter(ou X) que é uma
 * Toda a parte de Autenticação de Usuário foi feita com a ferramenta Breeze do Laravel
 
 # Para rodar o projeto
-O projeto foi desenvolvido utilizando o Sail e para rodar é necessário ter o WSL2 e o Docker instalado.
+O projeto foi desenvolvido utilizando o Sail, se estiver no Windows será necessário ter o WSL2 e o Docker instalado para rodar.
 
 * Clone o código-fonte em uma pasta no diretório (~) do seu Linux
 * Entre na pasta do projeto pelo terminal e instale as dependências com: `composer install`
