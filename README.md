@@ -19,6 +19,10 @@ O projeto foi desenvolvido utilizando o Sail e para rodar é necessário ter o W
 * Após isso inicie o Vite: `sail npm run dev` e tente abrir o site no seu navegador pelo **localhost**
 * Para criar as tabelas e popular o banco: `sail artisan migrate && sail artisan db:seed`
 
+  Usuário de teste:
+    email: `test@example.com`
+    senha: `password`
+
 # Bibliotecas Externas
 
 A única biblioteca externa utilizada foi o **day.js** para exibir o tempo que a publicação foi criada.
