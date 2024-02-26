@@ -4,7 +4,7 @@ O Parlador Ideal é uma ferramenta de microblogging, onde os colaboradores da em
 Para desenvolver esse projeto eu usei de inspiração o Twitter(ou X) que é uma plataforma de microblogging bem parecida com a ideia da empresa.
 
 # Detalhes Técnicos
-* Foi usado o framework Laravel para o Back-end e Vue.js para o Front-end do sistema.
+* Foi usado o framework Laravel para o Back-end e Vue.js juntamente com TailwindCSS para o Front-end do sistema.
 * Toda a parte de Autenticação de Usuário foi feita com a ferramenta Breeze do Laravel
 
 # Para rodar o projeto
