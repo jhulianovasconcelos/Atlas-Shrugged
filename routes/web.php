@@ -33,8 +33,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('posts', PostController::class)
-    ->only('index', 'store', 'update', 'destroy')
-    ->middleware(['auth', 'verified']);
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::controller(PostController::class)->group(function () {
+        Route::get('/posts', 'index')->name('posts.index');
+        Route::post('/posts', 'store')->name('posts.store');
+        Route::patch('/posts', 'update')->name('posts.update');
+        Route::delete('/posts', 'destroy')->name('posts.destroy');
+    });
+});
 
 require __DIR__.'/auth.php';

@@ -39,6 +39,7 @@
                 <span class="text-white">Novo Pensamento</span>
                 <Lamp class="hover:bg-gray-300 transition duration-150 p-3 bg-white rounded-full cursor-pointer mt-1 active:transform active:-translate-y-3"/>
             </div>
+
             <Modal :show="creatingPost" @close="closeModal">
                 <div class="p-6 bg-[#1D2A30]">
                     <form @submit.prevent="form.post(route('posts.store'), { onSuccess: () => [form.reset(), closeModal()] })">
